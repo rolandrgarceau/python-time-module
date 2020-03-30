@@ -106,25 +106,3 @@ time.gmtime(0)
 Out[2]: time.struct_time(tm_year=1970, tm_mon=1, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=3, tm_yday=1, tm_isdst=0)
 
 ```
-
-## [Attribute error:](https://stackoverflow.com/questions/54781947/attributeerror-datetime-time-object-has-no-attribute-time)
-
-Figure out how to print out time differences in Python:
-
-```py
-
-if __name__ == '__main__':
-    import math
-    import time as t
-    x = math.inf
-    counter = 0
-    start=t.time()
-
-    while True:
-       print(start)
-       if t.time() - start >= 59:
-            counter = 0
-            start = t.time()
-       counter +=1
-       print(counter)
-```
