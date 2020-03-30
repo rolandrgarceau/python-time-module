@@ -1,3 +1,9 @@
+import win32com.client #pip install pywin32 if not installed
+import math
+import time
+import PySimpleGUI as sg
+import pygame as pg
+from pywintypes import com_error
 
 ## [Attribute error:](https://stackoverflow.com/questions/54781947/attributeerror-datetime-time-object-has-no-attribute-time)
 

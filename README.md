@@ -91,7 +91,7 @@ With lots of patience my patawan...
 
 ## Python primitives
 
-Try a tuple or two. Its like a marriage. Abstract data = disconnect. Don't share right? Wind up on the couch!
+Try a [tuple](https://realpython.com/python-lists-tuples/#defining-and-using-tuples) or two. Its like a marriage. Abstract data = disconnect. Don't share right? Wind up on the couch!
 
 ```py
 
@@ -99,10 +99,30 @@ In [9]: ctime()
 Out[9]: 'Sun Mar 29 07:29:14 2020'
 
 ```
-Watch the struct_tiem import and recount gmtime(0) functionality. Go back and type in the REPL to convince us this works:
+Watch the struct_time import and recount gmtime(0) functionality. Go back and type in the REPL to convince us this works:
 
 ```py
 time.gmtime(0)
 Out[2]: time.struct_time(tm_year=1970, tm_mon=1, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=3, tm_yday=1, tm_isdst=0)
 
+```
+
+### Try not to confuse another language
+
+C structs and objects are clearly different topics. 
+
+### [struct_time](https://docs.python.org/3/library/time.html)
+
+Struct-time is derived from the C based time library, where that is actually a struct, but in python we use objects. The time module uses the struct directly, as it is implemented in C, and includes the header file times.h
+
+```py
+In [5]: from time import struct_time
+
+# tuples are specific to python
+In [6]: time_tuple = (1,2,3,4,5,6,7,8,9)
+
+In [7]: time_obj = struct_time(t_t)
+
+In [8]: time_obj
+Out[8]: time.struct_time(tm_year=1, tm_mon=2, tm_mday=3, tm_hour=4, tm_min=5, tm_sec=6, tm_wday=7, tm_yday=8, tm_isdst=9)
 ```
