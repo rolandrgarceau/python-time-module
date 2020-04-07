@@ -37,6 +37,8 @@ date +"%r"
 $NOW=$(date +"%Y-%m-%d")
 ```
 
+$NOW, for Python...
+
 ## Using a floating point number to represent time
 
 To measure Epoch from 1970 in seconds require looking at the math (I know it hurts sometimes...):
