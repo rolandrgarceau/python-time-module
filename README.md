@@ -37,6 +37,14 @@ date +"%r"
 $NOW=$(date +"%Y-%m-%d")
 ```
 
+Use this one for your work timing if needed.
+
+```
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+```
+
+More info man locale(1), gettimeofday(2), getutxent(3), strftime(3), strptime(3), timed(8)
+
 $NOW, for Python...
 
 ## Using a floating point number to represent time
